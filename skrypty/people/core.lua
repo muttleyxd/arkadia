@@ -20,8 +20,6 @@ function scripts.people:process_someone(short, name)
 
     local title = name
     title = title:gsub(" ", "_")
-
-    downloadFile(getMudletHomeDir() .. "/empty", "http://158.69.205.60/cgi-bin/people_listener.py?people_string=" .. name_short .. "!" .. title)
 end
 
 function scripts.people:process_someone_delay(short, title)
