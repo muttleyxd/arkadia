@@ -1,6 +1,6 @@
-local latest_release = "https://api.github.com/repos/tjurczyk/arkadia/releases/latest"
+local latest_release = "https://api.github.com/repos/muttleyxd/arkadia/releases/latest"
 local latest_file = getMudletHomeDir() .. "/latest.json"
-local url = "https://codeload.github.com/tjurczyk/arkadia/zip/"
+local url = "https://codeload.github.com/muttleyxd/arkadia/zip/"
 local scriptsZip = getMudletHomeDir() .. "/scripts.zip"
 local unzipDirectory = ""
 local scriptsDirectory = getMudletHomeDir() .. "/arkadia/"

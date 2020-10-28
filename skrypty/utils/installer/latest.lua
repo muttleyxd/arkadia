@@ -1,5 +1,5 @@
 scripts.latest = scripts.latest or {
-    url = "https://api.github.com/repos/tjurczyk/arkadia/releases/latest",
+    url = "https://api.github.com/repos/muttleyxd/arkadia/releases/latest",
     file_name = getMudletHomeDir() .. "/latest.json"
 }
 
@@ -8,7 +8,7 @@ scripts.latest = scripts.latest or {
 
     Args:
     - callback (function) - function which will be called upon version retrieval with api response as object with release info
-      refer to as an example: https://api.github.com/repos/tjurczyk/arkadia/releases/latest
+      refer to as an example: https://api.github.com/repos/muttleyxd/arkadia/releases/latest
 --]]
 function scripts.latest:get_latest_version(callback)
     scripts.latest.handler = scripts.event_register:force_register_event_handler(scripts.latest.handler, "sysDownloadDone", function(_, filename) scripts.latest:handle_download(_, filename, callback) end)
