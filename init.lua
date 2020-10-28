@@ -115,9 +115,7 @@ function alias_func_reload()
         package.loaded.init = nil
         require("init")
         load_scripts(true)
-        if scripts.config then
-            scripts.config:load_config { silent = true }
-        end
+        scripts.config_loader:reload_last_config()
     else
         reload_single_script(matches[2])
     end
